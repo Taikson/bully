@@ -12,6 +12,9 @@ tested against access points from numerous vendors, and with differing configura
 You **must** already have Wiire's Pixiewps installed.
 The latest version can be found here: [https://github.com/wiire/pixiewps](https://github.com/wiire/pixiewps).
 
+
+Fork info: This fork is only intended to make the progran exit uden certain circumstances, like being stalled by AP WPS session, to make easier atomation scripts development.
+
 # Requirements
 
 `apt-get -y install build-essential libpcap-dev libssl-dev aircrack-ng pixiewps`
