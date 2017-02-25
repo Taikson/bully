@@ -652,6 +652,8 @@ int main(int argc, char *argv[])
 	vt = find_vtag(vtag, vlen, TAG_WPS_APLOCK, 1);
 	if (vt && vt->data[0] == TAG_WPS_LOCKED) {
 		vprint("[!] Beacon information element indicates WPS is locked\n");
+		//@taiksontexas exit process
+		return 5;
 	};
 
 	int msgl;  uint8 *msg = build_ietags(tags, &msgl);
