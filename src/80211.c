@@ -338,6 +338,8 @@ reassoc:
 				if (!G->ignore) {
 					vprint("[!] WPS lockout reported, sleeping for %d seconds ...\n", G->lwait);
 				lockwait:
+					//@taiksontexas lockwait is ignored. Exiting process.
+					exit(-1);
 					pcap_wait(G, G->lwait * 1000);
 					G->dcount = 0;
 					goto reassoc;
